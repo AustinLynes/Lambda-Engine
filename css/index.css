@@ -127,7 +127,7 @@ table {
   border-spacing: 0;
 }
 .landing {
-  width: 75%;
+  width: 95%;
   border-radius: 1rem;
   border: 1px solid black;
   margin: 2rem auto;
@@ -167,7 +167,7 @@ table {
 }
 .landing .wrapper {
   font-size: 2rem;
-  margin: 1rem auto;
+  margin: 3rem auto 1rem;
   text-align: center;
   color: black;
   border-radius: 1rem;
@@ -215,12 +215,18 @@ table {
   border-radius: 1rem;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
 }
+.landing .wrapper .elements .element h4 {
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #6e6e6e;
+}
 .landing .wrapper .elements .element .el-img {
   background: white;
   padding: 1rem 0;
   margin: 0 auto;
   width: 90%;
-  height: 10rem;
+  height: 12.5rem;
   border-radius: 1rem;
   border: 1px solid #6e6e6e;
   box-shadow: 5px 5px 6px #6e6e6e;
