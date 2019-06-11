@@ -1,0 +1,131 @@
+.landing {
+    width           : 75%;
+    border-radius   : 1rem;
+    border          : 1px solid black;
+    margin          : 2rem auto;
+    background-color: white;
+    box-shadow      : 10px 10px 10px rgba(0, 0, 0, .4);
+
+    .log-nav {
+        display         : flex;
+        flex-direction  : row-reverse;
+        justify-content : space-between;
+        width           : 100%;
+        height          : 4.2rem;
+        border-radius   : .9rem .9rem 0 0;
+        background-color: rgba(0, 0, 0, .8);
+        border-bottom   : 2px solid black;
+        box-shadow      : 0px 10px 10px rgba(0, 0, 0, .4);
+
+        .logo {
+            height: 48px;
+            width : 48px;
+            margin: 10px;
+        }
+
+        .btn-container {
+            width          : 100%;
+            display        : flex;
+            justify-content: space-between;
+            flex-direction : row-reverse;
+
+            .btn {
+                color     : white;
+                font-size : 1rem;
+                text-align: center;
+                padding   : 1.5rem;
+            }
+
+            .btn:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .wrapper {
+        font-size    : 2rem;
+        margin       : 1rem auto;
+        text-align   : center;
+        color        : black;
+        border-radius: 1rem;
+
+        .main-content {
+            margin        : 0 auto;
+            width         : 95%;
+            padding-bottom: 1rem;
+           
+            h1 {
+
+                font-size    : 2rem;
+                border-bottom: 1px solid black;
+                padding-bottom: 1rem;
+            }
+
+            .description {
+                p {
+                    padding:1rem;
+                    font-size: 1.5rem;
+                    margin: 2rem auto;
+                }
+                border-bottom : 1px solid black;
+
+            }
+
+            h3 {
+                width        : 250px;
+                margin       : 2rem auto 0;
+                padding      : 1rem;
+                font-size    : 1.3rem;
+                border-radius: 1rem;
+
+            }
+        }
+
+        .elements {
+            margin         : 1rem auto;
+            display        : flex;
+            flex-direction : row;
+            justify-content: space-evenly;
+            border-radius  : 1rem;
+
+            .element {
+                width        : 23%;
+                height       : 80%;
+                box-sizing   : border-box;
+                padding      : 1rem;
+                margin       : 0 auto;
+                border       : 1px solid rgba(110, 110, 110, 1);
+                background   : rgba(220, 220, 220, 1);
+                border-radius: 1rem;
+                box-shadow   : inset 0 0 20px rgba(0, 0, 0, .4);
+
+                .el-img {
+                    background   : white;
+                    padding      : 1rem 0;
+                    margin       : 0 auto;
+                    width        : 90%;
+                    height       : 10rem;
+                    border-radius: 1rem;
+                    border       : 1px solid rgba(110, 110, 110, 1);
+                    box-shadow   : 5px 5px 6px rgba(110, 110, 110, 1);
+
+                }
+
+                .expand-txt {
+                    visibility: hidden;
+                    width     : 200px;
+                    text-align: center;
+                    padding   : 5px 0;
+                    position: relative;
+                    left    : 40px;
+                    z-index : 1;
+                }
+
+                &:hover .expand-txt {
+                    visibility: visible;
+                }
+            }
+        }
+
+    }
+}
